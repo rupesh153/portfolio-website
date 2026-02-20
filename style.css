@@ -1,0 +1,205 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+}
+
+/* ===== Navbar ===== */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 80px 80px;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content span {
+    color: #38bdf8;
+}
+
+.content h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+
+button {
+    padding: 10px 25px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* ===== Profile Image ===== */
+.img-container img {
+    width: 320px;
+    border-radius: 50%;
+    border: 6px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+}
+
+/* ===== Sections ===== */
+section {
+    padding: 80px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* ===== Skills ===== */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+
+.skill i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.skill:hover {
+    background: #38bdf8;
+    color: #000;
+    transform: translateY(-8px);
+}
+
+/* ===== Contact ===== */
+#contactpage input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+}
+
+#contactpage button {
+    padding: 10px 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #0f172a;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+}
+
+footer button {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-container {
+        margin-top: 40px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    header {
+        padding: 15px 30px;
+    }
+
+    section {
+        padding: 60px 30px;
+    }
+}

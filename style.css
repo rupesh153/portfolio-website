@@ -154,18 +154,8 @@ section h2 {
     transform: translateY(-8px);
 }
 
-/* ===== Contact ===== */
-#contactpage input {
-    padding: 10px;
-    width: 250px;
-    border-radius: 6px;
-    border: none;
-    margin-right: 10px;
-}
 
-#contactpage button {
-    padding: 10px 20px;
-}
+
 
 /* ===== Footer ===== */
 footer {
@@ -180,7 +170,7 @@ footer button {
     font-size: 18px;
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
@@ -200,6 +190,198 @@ footer button {
     }
 
     section {
-        padding: 60px 30px;
+        padding: 0px 30px;
+    }
+}
+.contact {
+    background: #1e293b;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+    flex-basis: 48%;
+    text-align: left;
+}
+
+.contact-left p {
+    margin: 15px 0;
+}
+
+.social-icon a {
+    margin-right: 15px;
+    font-size: 22px;
+    color: #38bdf8;
+    transition: 0.3s;
+}
+
+.social-icon a:hover {
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* ========== FORM ========== */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    color: white;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0ea5e9;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #0f172a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer button {
+    margin-top: 10px;
+    background: #38bdf8;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-container img {
+        margin-top: 30px;
+        width: 250px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+/* ===== EDUCATION SECTION ===== */
+
+#education-field {
+    padding: 20px 60px;
+    background: #0f172a;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education-card {
+    background: #1e293b;
+    padding: 40px 30px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+    text-align: left;
+    
+}
+
+.education-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.education-card h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.education-card .college {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.education-card .year {
+    background: #38bdf8;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(56, 189, 248, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-card {
+        width: 100%;
     }
 }

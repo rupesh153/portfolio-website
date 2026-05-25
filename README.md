@@ -12,11 +12,16 @@ Social media links integration
 Modern UI using Bootstrap
 
 🛠️ Technologies Used
-HTML5
+HTML
+
 CSS3
+
 JavaScript
+
 Bootstrap 5
+
 Git
+
 GitHub
 
 How to Run the Project

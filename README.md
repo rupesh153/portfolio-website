@@ -12,6 +12,7 @@ Social media links integration
 Modern UI using Bootstrap
 
 🛠️ Technologies Used
+
 HTML
 
 CSS3

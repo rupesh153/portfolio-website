@@ -1,14 +1,23 @@
-📌 Project Overview
+📌 Project Overview:
 
 The Portfolio Website is a responsive personal portfolio web application developed to showcase personal information, skills, projects, achievements, and contact details in a professional manner.
+
 Features: 
+
 Responsive homepage design
+
 Navigation bar with smooth scrolling
+
 About section with personal introduction
+
 Skills section with progress bars/icons
+
 Projects showcase section
+
 Contact form section
+
 Social media links integration
+
 Modern UI using Bootstrap
 
 🛠️ Technologies Used
